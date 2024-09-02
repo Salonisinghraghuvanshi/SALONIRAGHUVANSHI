@@ -1,0 +1,44 @@
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(170, 170, 170, 0.671), #00a2ffbe);
+  backdrop-filter: blur(3px);
+  text-align: center;
+  color: #00a2ff;
+  position: absolute;
+  top: 37px;
+  left: 50%;
+  transform: translateX(-50%); /* Center the dropdown */
+  width: 40px; /* Width adjusted to fit icons only */
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  z-index: 1000;
+  margin-top: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.514);
+  border-radius: 0 0 10px 10px;
+  /* border: 1px solid #00a2ff; */
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  height: 200px; /* Slightly increased height */
+  opacity: 1;
+}
+
+/* Social icons */
+.social-icons i{
+  display: block;
+  text-align: center;
+  color: #ffffff;
+}

@@ -1,0 +1,28 @@
+/* Education.css */
+.main-content {
+   padding: 40px 20px;
+ }
+ 
+ .education-list {
+   margin-top: 20px;
+ }
+ 
+ .education-item {
+   margin-bottom: 30px;
+   padding: 20px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+ }
+ 
+ .education-item h2 {
+   margin-top: 0;
+ }
+ 
+ .education-item h4 {
+   margin: 5px 0;
+ }
+ 
+ .education-item p {
+   margin: 5px 0;
+ }
+ 

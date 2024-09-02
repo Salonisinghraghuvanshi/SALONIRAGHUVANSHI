@@ -1,0 +1,130 @@
+/* Article.css */
+.article-detail {
+   padding: 20px;
+ }
+ 
+ .article-detail img {
+   max-width: 100%;
+ }
+ 
+ .article-detail h1 {
+   margin-top: 20px;
+ }
+ 
+ .article-detail p {
+   line-height: 1.6;
+ }
+ .btn-col {
+  background: rgb(0, 162, 255);
+  color: white;
+}
+.btn-article{
+  color: white;
+  padding: 10px;
+  margin-inline: 1rem;
+}
+.light-mode .btn-article{
+  color: rgb(0, 0, 0);
+}
+.btn-group .btn {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.btn-group .btn:hover {
+  border-bottom: 1px solid #007bff; /* Bootstrap primary blue color */
+}
+.btn-group .btn.active {
+  border-bottom: 1px solid #007bff; /* Bootstrap primary blue color */
+}
+
+.btn-col:hover {
+  background: white;
+  color: rgb(0, 162, 255);
+  border: 1px solid rgb(0, 162, 255);
+}
+ h2 {
+      margin-top: 40px;
+      border-bottom: 2px solid #0066cc;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      font-size: 1.5em;
+    }
+
+    p {
+      margin: 15px 0;
+      font-size: 1.1em;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    li {
+      color: #a8a8a8ee;
+      margin-bottom: 10px;
+    }
+
+    .light-mode li {
+      color: #888888ee;
+      margin-bottom: 10px;
+    }
+
+    .back-arrow {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ffffff;
+      padding: 5px;
+      padding-inline: 6px;
+      border: 1px solid #0066cc;
+      border-radius: 80%;
+      cursor: pointer;
+    }
+
+    .light-mode .back-arrow {
+      color: #000000ee;
+    }
+
+    code,
+    pre {
+      background-color: #f1f1f1;
+      color: #c7254e;
+      padding: 10px;
+      border-radius: 5px;
+      display: block;
+      font-size: 1em;
+    }
+
+    code {
+      display: inline;
+      padding: 2px 5px;
+    }
+
+    pre {
+      padding: 15px;
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+
+    .highlight {
+      background-color: #e7f3ff;
+      border-left: 4px solid #0066cc;
+      padding: 10px;
+      margin: 20px 0;
+      border-radius: 5px;
+      font-size: 1.1em;
+    }
+
+    .highlight li {
+      color: black;
+      font-weight: 300;
+    }
+
+  
