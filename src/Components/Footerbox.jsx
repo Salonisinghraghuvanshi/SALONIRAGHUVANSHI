@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/FooterBox.css'; // Create a separate CSS file for FooterBox styles
+import '../styles/Footerbox.css'; // Create a separate CSS file for FooterBox styles
 import file from '../assets/Resume.pdf';
 
 const FooterBox = () => {
