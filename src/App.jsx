@@ -5,7 +5,7 @@ import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Education from './Pages/Education';
 import Messege from './Pages/Messege';
-import Article from './pages/Article';
+import Article from './Pages/Article';
 import ArticleList from './Pages/ArticleList';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css'; // Global CSS
