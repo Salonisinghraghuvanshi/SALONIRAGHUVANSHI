@@ -6,22 +6,22 @@ const services = [
   {
     title: "AI Content & Canva Pro Design",
     desc: "Leveraging advanced AI tools and Canva Pro to maintain a minimal, elegant, and highly engaging visual identity.",
-    image: "/SALONI.jpg",
+    image: "/AI.jpeg",
   },
   {
     title: "Cinematic Videography",
     desc: "Ultra-realistic product shoots and lifestyle marketing sequences that capture every intricate detail to captivate your audience.",
-    image: "/SALONI (1).jpg",
+    image: "/Cinematic.jpeg",
   },
   {
     title: "Meta Ads & Strategy",
     desc: "Data-driven advertising campaigns designed to turn high-quality content into measurable ROI and brand scaling.",
-    image: "/SALONI.jpg",
+    image: "/Meta.jpeg",
   },
   {
     title: "End-to-End Social Management",
     desc: "Comprehensive handling of your social platforms—from perfectly crafted LinkedIn banners to daily Instagram engagement.",
-    image: "/SALONI (1).jpg",
+    image: "/E2E.jpeg",
   },
 ];
 

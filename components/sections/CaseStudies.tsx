@@ -1,49 +1,98 @@
 "use client";
 
-import { ArrowUpRight, BarChart3, TrendingUp, Users } from "lucide-react";
+import { ArrowUpRight, BarChart3, TrendingUp, Users, Server, ShieldCheck } from "lucide-react";
 
 const caseStudies = [
   {
     id: "01",
-    client: "SpiceX Beverage Co.",
-    title: "Herbal Bourbon Product Launch",
-    role: "AI Concept Art, Videography & Meta Ads",
+    client: "SpiceX Herbal Bourbon Whisky",
+    title: "Product Visualization & Marketing Assets",
+    role: "Creative Direction • Product Rendering • Brand Assets",
     description:
-      "Developed the end-to-end visual identity and lifestyle marketing sequence for an innovative beverage brand featuring in-the-bottle extraction. Utilizing ultra-realistic AI generation and 85mm lens style videography, we showcased the proprietary slotted strainer cap and PET plastic textures. The campaign culminated in a high-converting Meta ad showing the perfect bourbon pour while spices remained flawlessly filtered.",
+      "Developed premium product visualizations for SpiceX Herbal Bourbon Whisky, highlighting the bottle design, slotted strainer cap mechanism, and herbal ingredients including cinnamon, cloves, cardamom, star anise, mint, and lemon. Produced marketing-ready visuals for digital campaigns and designed LinkedIn branding assets optimized for professional platforms.",
     metrics: [
-      { label: "CPA Reduction", value: "42%", icon: <TrendingUp className="w-4 h-4" /> },
-      { label: "Ad ROAS", value: "4.8x", icon: <BarChart3 className="w-4 h-4" /> },
+      {
+        label: "Deliverables",
+        value: "15+ Assets",
+        icon: <TrendingUp className='w-4 h-4' />,
+      },
+      {
+        label: "Platforms",
+        value: "LinkedIn",
+        icon: <Users className='w-4 h-4' />,
+      },
     ],
-    image: "/SALONI.jpg",
+    image: "/case (4).jpeg",
     reverse: false,
   },
+
   {
     id: "02",
-    client: "Lumina Aesthetics",
-    title: "Organic Scaling via Canva Pro",
-    role: "Social Media Strategy & Canva Design",
+    client: "Drive Genius AI",
+    title: "AI Brand Identity System",
+    role: "Brand Strategy • UI Direction • Visual Design",
     description:
-      "Transformed a disjointed Instagram feed into a premium, cohesive digital storefront. By creating minimal, elegant Canva Pro templates and establishing a strict visual hierarchy, we elevated the brand's perceived value. Paired with a consistent posting schedule and community management, organic reach skyrocketed within 90 days.",
+      "Created a complete visual identity system for Drive Genius AI. Defined typography, color systems, design language, and marketing visuals to establish a premium and trustworthy AI brand presence. Designed assets that can scale consistently across websites, social media, presentations, and future product launches.",
     metrics: [
-      { label: "Follower Growth", value: "+12k", icon: <Users className="w-4 h-4" /> },
-      { label: "Engagement", value: "+150%", icon: <TrendingUp className="w-4 h-4" /> },
+      {
+        label: "Brand System",
+        value: "Complete",
+        icon: <BarChart3 className='w-4 h-4' />,
+      },
+      {
+        label: "Assets",
+        value: "Multi-Channel",
+        icon: <TrendingUp className='w-4 h-4' />,
+      },
     ],
-    image: "/SALONI (1).jpg",
+    image: "/case (3).jpeg",
     reverse: true,
   },
+
   {
     id: "03",
-    client: "Verve Wellness",
-    title: "Cinematic UGC TikTok Campaign",
-    role: "Short-Form Video & UGC Direction",
+    client: "Aruba Maritime",
+    title: "Maritime Certificate Management Platform",
+    role: "MERN Stack Development • Cloud Infrastructure",
     description:
-      "Bridged the gap between high-end commercial visuals and authentic user-generated content. We directed a series of unboxing and lifestyle opening sequences that felt organic to the TikTok algorithm but maintained a luxury aesthetic, resulting in viral traction and sold-out inventory.",
+      "Built and maintained web-based certificate management systems for maritime operations. Managed deployment workflows, cloud hosting, backend integrations, and platform reliability. Focused on secure data handling, document verification workflows, and scalable infrastructure for operational efficiency.",
     metrics: [
-      { label: "Organic Views", value: "2.4M", icon: <Users className="w-4 h-4" /> },
-      { label: "Conversion Rate", value: "8.5%", icon: <BarChart3 className="w-4 h-4" /> },
+      {
+        label: "Technology",
+        value: "MERN Stack",
+        icon: <Server className='w-4 h-4' />,
+      },
+      {
+        label: "Hosting",
+        value: "Cloud",
+        icon: <ShieldCheck className='w-4 h-4' />,
+      },
     ],
-    image: "/SALONI.jpg",
+    image: "/case (2).jpeg",
     reverse: false,
+  },
+
+  {
+    id: "04",
+    client: "Personal Brand Projects",
+    title: "Content Creation & Visual Storytelling",
+    role: "Video Editing • Graphic Design • Social Media",
+    description:
+      "Produced short-form videos, brand graphics, presentation decks, and marketing creatives for startups and personal brands. Combined storytelling, motion design, and visual strategy to create content optimized for engagement and professional brand positioning.",
+    metrics: [
+      {
+        label: "Creative Skills",
+        value: "Multi-Discipline",
+        icon: <Users className='w-4 h-4' />,
+      },
+      {
+        label: "Content",
+        value: "Video + Design",
+        icon: <TrendingUp className='w-4 h-4' />,
+      },
+    ],
+    image: "/case (1).jpeg",
+    reverse: true,
   },
 ];
 
@@ -63,7 +112,7 @@ const CaseStudiesSection = () => {
             Featured <span className="text-[#c9a94a]">Case Studies</span>
           </h2>
           <p className="text-[15px] text-[#5a4a2e] leading-relaxed max-w-[500px]">
-            A deep dive into how strategic visual content, AI workflows, and targeted ads transform premium brands into market leaders.
+            A deep dive into how strategic visual content, robust development, and tailored design transform brands into market leaders.
           </p>
         </div>
 
@@ -128,10 +177,10 @@ const CaseStudiesSection = () => {
                   ))}
                 </div>
 
-                <button className="group flex items-center gap-2 text-[#1e1608] text-sm font-bold border-b-2 border-[#1e1608] pb-1 hover:text-[#c9a94a] hover:border-[#c9a94a] transition-colors duration-300">
+                {/* <button className="group flex items-center gap-2 text-[#1e1608] text-sm font-bold border-b-2 border-[#1e1608] pb-1 hover:text-[#c9a94a] hover:border-[#c9a94a] transition-colors duration-300">
                   Read Full Breakdown
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-                </button>
+                </button> */}
               </div>
 
             </div>
@@ -139,12 +188,12 @@ const CaseStudiesSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-24 pt-12 border-t border-[#e8dfc8] flex flex-col items-center text-center">
+        {/* <div className="mt-24 pt-12 border-t border-[#e8dfc8] flex flex-col items-center text-center">
           <h3 className="text-2xl font-extrabold text-[#1e1608] mb-4">Want similar results for your brand?</h3>
           <button className="bg-[#1e1608] text-white text-sm font-semibold rounded-full px-8 py-3.5 hover:bg-[#c9a94a] transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 active:translate-y-0">
             View Pricing & Packages
           </button>
-        </div>
+        </div> */}
 
       </div>
     </section>

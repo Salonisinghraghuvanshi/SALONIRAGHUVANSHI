@@ -42,7 +42,9 @@ const AboutSection = () => {
 
           {/* CTA */}
           <button className="self-start flex items-center gap-2.5 bg-[#c9a94a] text-white text-sm font-semibold rounded-full px-6 py-3 hover:bg-[#b8973d] hover:scale-105 transition-all duration-200 active:scale-100">
-            View My Portfolio
+            <a href="https://drive.google.com/drive/folders/1sXOQwuKQ5AIY9eo_-lzKhTGlJU7qRPFa?usp=sharing" className="text-white">
+              View My Portfolio
+            </a>
             <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
               <svg width="9" height="11" viewBox="0 0 10 12" fill="none">
                 <path d="M1 1L9 6L1 11V1Z" fill="white" />

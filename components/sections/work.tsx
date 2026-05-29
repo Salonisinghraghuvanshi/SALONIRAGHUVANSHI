@@ -2,44 +2,27 @@
 
 import { useRef, useState } from "react";
 
-const postCategories = [
-  "All",
-  "Canva Pro",
-  "AI Concept Art",
-  "Meta Ad Creatives",
-  "Brand Identity",
-  "Product Mockups",
-];
 
-const reelCategories = [
-  "All",
-  "Cinematic Reels",
-  "Lifestyle Sequence",
-  "UGC Ads",
-  "Commercial B-Roll",
-  "AI Video Generation",
-];
+
 
 const posts = [
-  { category: "Canva Pro", image: "/SALONI.jpg", label: "Minimalist LinkedIn Banner" },
-  { category: "AI Concept Art", image: "/SALONI (1).jpg", label: "Ultra-Realistic Bottle Design" },
-  { category: "Meta Ad Creatives", image: "/SALONI.jpg", label: "Herbal Infusion Campaign" },
-  { category: "Brand Identity", image: "/SALONI (1).jpg", label: "High-End Wellness Aesthetic" },
-  { category: "Product Mockups", image: "/SALONI.jpg", label: "Technical Slotted Cap Anatomy" },
-  { category: "Canva Pro", image: "/SALONI (1).jpg", label: "Spiced Bourbon Ad" },
-  { category: "AI Concept Art", image: "/SALONI.jpg", label: "85mm Lens Product Shot" },
-  { category: "Meta Ad Creatives", image: "/SALONI (1).jpg", label: "Premium Conversion Campaign" },
-];
-
-const reels = [
-  { category: "Cinematic Reels", image: "/SALONI.jpg", label: "Perfect Pour Sequence" },
-  { category: "Lifestyle Sequence", image: "/SALONI (1).jpg", label: "Unboxing & Opening Sequence" },
-  { category: "UGC Ads", image: "/SALONI.jpg", label: "In-the-Bottle Extraction Demo" },
-  { category: "Commercial B-Roll", image: "/SALONI (1).jpg", label: "Bourbon & Spices Mix" },
-  { category: "AI Video Generation", image: "/SALONI.jpg", label: "Cinematic Spice Drop" },
-  { category: "Cinematic Reels", image: "/SALONI (1).jpg", label: "Transparent PET Textures" },
-  { category: "UGC Ads", image: "/SALONI.jpg", label: "Minimal Elegant Setup" },
-  { category: "Commercial B-Roll", image: "/SALONI (1).jpg", label: "High-End Product Reveal" },
+  { image: "/post/9.PNG", label: "Minimalist LinkedIn Banner" },
+  {  image: "/post/10.PNG", label: "Ultra-Realistic Bottle Design" },
+  {  image: "/post/11.PNG", label: "Herbal Infusion Campaign" },
+  {  image: "/post/12.PNG", label: "High-End Wellness Aesthetic" },
+  {  image: "/post/13.PNG", label: "Technical Slotted Cap Anatomy" },
+  {  image: "/post/14.jpeg", label: "Spiced Bourbon Ad" },
+  {  image: "/post/15.jpeg", label: "85mm Lens Product Shot" },
+  {  image: "/post/16.jpeg", label: "Premium Conversion Campaign" },
+  { image: "/post/17.jpeg", label: "Minimalist LinkedIn Banner" },
+  {  image: "/post/1.jpeg", label: "Ultra-Realistic Bottle Design" },
+  {  image: "/post/2.jpeg", label: "Ultra-Realistic Bottle Design" },
+  {  image: "/post/3.jpeg", label: "Herbal Infusion Campaign" },
+  {  image: "/post/4.jpeg", label: "High-End Wellness Aesthetic" },
+  {  image: "/post/5.webp", label: "Technical Slotted Cap Anatomy" },
+  {  image: "/post/6.jpeg", label: "Spiced Bourbon Ad" },
+  {  image: "/post/7.jpeg", label: "85mm Lens Product Shot" },
+  {  image: "/post/8.jpeg", label: "Premium Conversion Campaign" },
 ];
 
 // ── Reusable carousel section ──
@@ -47,21 +30,18 @@ const WorkCarousel = ({
   title,
   accent,
   subtitle,
-  categories,
   items,
   aspectRatio,
 }: {
   title: string;
   accent: string;
   subtitle: string;
-  categories: string[];
-  items: { category: string; image: string; label: string }[];
+  items: { image: string; label: string }[];
   aspectRatio: string;
 }) => {
   const [active, setActive] = useState("All");
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const filtered = active === "All" ? items : items.filter((i) => i.category === active);
 
   const scroll = (dir: "left" | "right") => {
     const el = scrollRef.current;
@@ -105,25 +85,32 @@ const WorkCarousel = ({
                 <path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
+             <button
+          className="self-start sm:self-auto flex items-center gap-2 bg-[#1c1710] text-white text-sm font-bold px-6 py-3 rounded-full shadow transition-all duration-200 hover:bg-[#b8860b] hover:scale-105 active:scale-100"
+        >
+          <a href="https://drive.google.com/drive/folders/1sXOQwuKQ5AIY9eo_-lzKhTGlJU7qRPFa?usp=sharing">See More Work</a>
+          <svg width="8" height="10" viewBox="0 0 10 12" fill="none">
+            <path d="M1 1L9 6L1 11V1Z" fill="currentColor" />
+          </svg>
+        </button>
           </div>
         </div>
 
         {/* Category filter pills */}
-        <div className="flex flex-wrap gap-2 mb-8">
+        {/* <div className="flex flex-wrap gap-2 mb-8">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActive(cat)}
-              className={`text-[13px] font-semibold px-4 py-1.5 rounded-full border transition-all duration-200 whitespace-nowrap ${
-                active === cat
+              className={`text-[13px] font-semibold px-4 py-1.5 rounded-full border transition-all duration-200 whitespace-nowrap ${active === cat
                   ? "bg-[#1e1608] text-white border-[#1e1608]"
                   : "bg-white text-[#5a4a2e] border-[#e8dfc8] hover:border-[#c9a94a] hover:text-[#c9a94a]"
-              }`}
+                }`}
             >
               {cat}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Scrollable cards */}
         <div
@@ -131,44 +118,35 @@ const WorkCarousel = ({
           className="flex gap-4 overflow-x-auto pb-3 scroll-smooth"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {filtered.length === 0 ? (
-            <p className="text-sm text-[#9e8c6e] py-12">No work in this category yet.</p>
-          ) : (
-            filtered.map((item, i) => (
+          {items.map((item, i) => (
+            <div
+              key={i}
+              className="flex-shrink-0 group relative rounded-2xl overflow-hidden border border-[#e8dfc8] bg-[#faf8f3] hover:border-[#c9a94a]/60 hover:shadow-lg transition-all duration-300"
+              style={{
+                width: aspectRatio === "9/16" ? "200px" : "280px",
+              }}
+            >
               <div
-                key={i}
-                className="flex-shrink-0 group relative rounded-2xl overflow-hidden border border-[#e8dfc8] bg-[#faf8f3] hover:border-[#c9a94a]/60 hover:shadow-lg transition-all duration-300"
-                style={{
-                  width: aspectRatio === "9/16" ? "200px" : "280px",
-                }}
+                className="overflow-hidden"
+                style={{ aspectRatio }}
               >
-                <div
-                  className="overflow-hidden"
-                  style={{ aspectRatio }}
-                >
-                  <img
-                    src={item.image}
-                    alt={item.label}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-
-                {/* Overlay label */}
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#1e1608]/80 via-[#1e1608]/30 to-transparent px-4 py-3 translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
-                  <span className="text-white text-[12px] font-semibold tracking-wide">
-                    {item.label}
-                  </span>
-                </div>
-
-                {/* Top-right category badge */}
-                <div className="absolute top-3 right-3 bg-[#c9a94a]/90 backdrop-blur-sm text-white text-[10px] font-bold px-2.5 py-1 rounded-full">
-                  {item.category}
-                </div>
+                <img
+                  src={item.image}
+                  alt={item.label}
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-            ))
-          )}
-        </div>
 
+              {/* Overlay label */}
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#1e1608]/80 via-[#1e1608]/30 to-transparent px-4 py-3 translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
+                <span className="text-white text-[12px] font-semibold tracking-wide">
+                  {item.label}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+       
       </div>
     </section>
   );
@@ -180,21 +158,8 @@ export const PostsSection = () => (
     title="Static & AI"
     accent="Creatives"
     subtitle="High-converting Canva Pro designs, ultra-realistic AI concepts, and Meta ad creatives tailored for premium brands."
-    categories={postCategories}
     items={posts}
     aspectRatio="1/1"
-  />
-);
-
-// ── Reels Section ──
-export const ReelsSection = () => (
-  <WorkCarousel
-    title="Cinematic &"
-    accent="Short-Form"
-    subtitle="Engaging lifestyle sequences, UGC, and 85mm-style commercial videography that stops the scroll."
-    categories={reelCategories}
-    items={reels}
-    aspectRatio="9/16"
   />
 );
 

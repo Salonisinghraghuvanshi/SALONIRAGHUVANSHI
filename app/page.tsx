@@ -1,9 +1,4 @@
-import { Navbar } from '@/components/sections/Navbar';
 import { ClientsBar } from '@/components/sections/ClientsBar';
-import { Process } from '@/components/sections/Process';
-import { VideoBanner } from '@/components/sections/VideoBanner';
-import { Portfolio } from '@/components/sections/Portfolio';
-import { Testimonials } from '@/components/sections/Testimonials';
 import { InterestsTags } from '@/components/sections/InterestsTags';
 import { Footer } from '@/components/sections/Footer';
 import HeroSection from '@/components/sections/Hero';
@@ -26,6 +21,7 @@ export default function Home() {
       <TrustedSection/>
         <ServicesSection/>
         <WorkSection/>
+      <ClientsBar/>
         <VideoShowcase/>
         <FollowSection/>
         <ContactSection/>

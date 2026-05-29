@@ -152,7 +152,7 @@ const HeroSection = () => {
             }`}
           >
             <a 
-              href="#portfolio"
+              href="https://drive.google.com/drive/folders/1sXOQwuKQ5AIY9eo_-lzKhTGlJU7qRPFa?usp=sharing"
               className="bg-[#1e1608] text-white text-sm font-semibold rounded-full px-6 py-3 flex items-center gap-2.5 transition-all duration-200 hover:bg-[#c9a94a] hover:scale-105 active:scale-100"
             >
               View My Work
